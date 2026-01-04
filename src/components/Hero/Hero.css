@@ -1,0 +1,102 @@
+.hero {
+  width: 100%;
+  background: #ffffff;
+  padding: 20px 0 0 0;   /* reduced top, added bottom spacing */
+}
+
+.hero-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LEFT CONTENT */
+.hero-left {
+  width: 55%;
+  margin-top: -10px;      /* pushes text slightly upward (Figma accurate) */
+}
+
+/* TITLE */
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111111;
+  margin-bottom: 18px;    /* ADDED spacing */
+}
+
+.highlight {
+  color: #F4A100;
+}
+
+/* TAGLINE */
+.hero-sub {
+  font-size: 17px;
+  font-weight: 600;       /* semi-bold to match Figma */
+  color: #333;
+  margin-bottom: 14px;    /* ADDED spacing */
+}
+
+/* DESCRIPTION */
+.hero-desc {
+  font-size: 15px;
+  color: #666;
+  max-width: 600px;
+  line-height: 1.5;
+  margin-bottom: 28px;    /* ADDED spacing */
+}
+
+/* STUDENTS */
+.hero-students {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 35px;    /* ADDED spacing */
+}
+
+.avatars img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-left: -10px;
+  background: #ddd;
+}
+
+.student-count h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.student-count p {
+  font-size: 13px;
+  color: #777;
+}
+
+/* BUTTON */
+.hero-btn {
+  background: #F4A100;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 5px;        /* slight breathing space */
+}
+
+.hero-btn:hover {
+  background: #da8f00;
+}
+
+/* RIGHT IMAGE */
+.hero-right img {
+  width: 440px;
+  height: auto;
+}

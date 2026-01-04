@@ -1,0 +1,70 @@
+.navbar {
+  width: 100%;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 18px 30px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 45px;
+}
+
+/* --- BASE LINK STYLE (both NavLink and <a>) --- */
+.nav-links a,
+.nav-links .navlink {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+/* Hover color */
+.nav-links a:hover,
+.nav-links .navlink:hover {
+  color: #F4A100;
+}
+
+/* ---- UNDERLINE EFFECT ---- */
+.nav-links a::after,
+.nav-links .navlink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #F4A100;
+  transition: width 0.25s ease;
+  border-radius: 2px;
+}
+
+/* Hover underline */
+.nav-links a:hover::after,
+.nav-links .navlink:hover::after {
+  width: 100%;
+}
+
+/* ---- ACTIVE NavLink (ONLY Home or /gallery) ---- */
+.nav-links .active {
+  color: #F4A100;
+}
+
+.nav-links .active::after {
+  width: 100%;
+}
